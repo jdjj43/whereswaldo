@@ -1,0 +1,62 @@
+html {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.scoreBar {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50px;
+  color: white;
+  width: 460px;
+  height: 52px;
+  font-size: 15px;
+  gap: 10px;
+  padding: 0 25px;
+  text-align: center;
+  z-index: 1;
+}
+
+.scoreBar p {
+  font-weight: 700;
+}
+
+.win {
+  color: greenyellow; 
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.icon {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 25px;
+  padding: 5px 25px;
+}
+
+.icon:first-child {
+  align-items: center;
+  border-radius: 20px 0 0 20px;
+}
+
+.icon:last-child {
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+}
+
+.icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
